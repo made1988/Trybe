@@ -1,4 +1,4 @@
-let input = "Bishop";
+let input = "King";
 let chessPiece = input.toLowerCase();
 
 switch (chessPiece) {
