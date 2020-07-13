@@ -1,6 +1,6 @@
 let a = 796;
 let b = 85333.711;
 
-mult = a * b;
+div = a / b;
 
-console.log(mult);
+console.log(div);
