@@ -7,4 +7,9 @@ for (let i = 0; i < numbers.length; i += 1) {
   }
 }
 
-console.log(oddNumbers);
+if (oddNumbers === 0) {
+  console.log("There are no odd numbers in the given array");
+} else {
+  console.log("There are " + oddNumbers + " odd numbers in the given array");
+}
+
