@@ -7,7 +7,8 @@ for (let i = 0; i < numbers.length; i += 1) {
     newNumber = numbers[i] * numbers[i + 1];
     biggerNumbers.push(newNumber);
   } else {
-    newNumber = numbers[1] * 2;
+    newNumber = numbers[i] * 2;
+    biggerNumbers.push(newNumber);
   }
 }
 
