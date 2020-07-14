@@ -8,8 +8,7 @@ for (let firstIndex = 0; firstIndex < numbers.length; firstIndex += 1) {
       compare += 1;
     }
   }
-  if ( compare === 9) {
+  if ( compare === 0) {
     console.log(numbers[firstIndex]);
   }
 }
-
