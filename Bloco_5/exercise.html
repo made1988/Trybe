@@ -46,7 +46,7 @@
         - document.getElementsByTagName()
  * Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
  * Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
- Crie uma função que mude a cor do quadrado vermelho para branco.
+ *Crie uma função que mude a cor do quadrado vermelho para branco.
  Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
@@ -59,12 +59,14 @@
 
         changePText(0);
 
-        function changeBGColor(classChange) {
+        function changeBGColor(classChange, colorChange) {
           let classToChange = document.getElementsByClassName(classChange);
-          classToChange[0].style.backgroundColor = "rgb(76,164,109)";
+          classToChange[0].style.backgroundColor = colorChange;
         }
 
-        changeBGColor("main-content");
+        changeBGColor("main-content", "rgb(76,164,109)");
+
+        changeBGColor("center-content", "white");
 
     </script>
   </body>
