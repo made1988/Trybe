@@ -51,6 +51,13 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+        function changePText(pIndex) {
+          let paragraph = document.getElementsByTagName("p")[pIndex];
+          paragraph.innerText = "In two years time, I expect to be employed as a Web Dev, working 100% remotely, travelling my way north from Ushuaia to Alaska with my girlfriend";
+        }
+
+        changePText(0);
     </script>
   </body>
 </html>
