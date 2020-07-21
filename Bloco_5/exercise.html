@@ -49,7 +49,7 @@
  *Crie uma função que mude a cor do quadrado vermelho para branco.
  *Crie uma função que corrija o texto da tag <h1>.
  *Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ *Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
         function changePText(pIndex) {
@@ -57,30 +57,39 @@
           paragraph.innerText = "In two years time, I expect to be employed as a Web Dev, working 100% remotely, travelling my way north from Ushuaia to Alaska with my girlfriend";
         }
 
-        changePText(0);
-
         function changeBGColor(classChange, colorChange) {
           let classToChange = document.getElementsByClassName(classChange);
           classToChange[0].style.backgroundColor = colorChange;
         }
-
-        changeBGColor("main-content", "rgb(76,164,109)");
-
-        changeBGColor("center-content", "white");
 
         function correctTag() {
           let correctionTag = document.getElementsByTagName("h1");
           correctionTag[0].innerText = "Exercício 5.1 - JavaScript";
         }
 
-        correctTag();
-
         function upperCaseParagraph(indexToUC) {
           let uCP = document.getElementsByTagName("p");
           uCP[indexToUC].innerText = uCP[indexToUC].innerText.toUpperCase();
         }
 
+        function showParagraph() {
+          let paragraphs = document.getElementsByTagName("p");
+          for (let i = 0; i < paragraphs.length; i += 1) {
+            console.log(paragraphs[i].innerText);
+          }
+        }
+
+        changePText(0);
+
+        changeBGColor("main-content", "rgb(76,164,109)");
+
+        changeBGColor("center-content", "white");
+
+        correctTag();
+
         upperCaseParagraph(0);
+
+        showParagraph();
 
     </script>
   </body>
