@@ -57,7 +57,70 @@
   </head>
   <body>
     <script>
-      
+      let title = document.createElement("h1");
+      title.innerText = "Exercício 5.2 - JavaScript DOM";
+      let firstDiv = document.createElement("div");
+      firstDiv.className = "main-content";
+      let secondDiv = document.createElement("div");
+      secondDiv.className = "center-content";
+      let firstParagraph = document.createElement("p");
+      firstParagraph.innerText = "The cats are going crazy";
+      let thirdDiv = document.createElement("div");
+      thirdDiv.className = "left-content";
+      let fourthDiv = document.createElement("div");
+      fourthDiv.className = "right-content";
+      let smallImg = document.createElement("img");
+      smallImg.src = "https://picsum.photos/200";
+      smallImg.className = "small-image";
+      let unorderedList = document.createElement("ul");
+      unorderedList.id = "numbers";
+      let firstItem = document.createElement("li");
+      firstItem.innerText = "Um";
+      let secondItem = document.createElement("li");
+      secondItem.innerText = "Dois";
+      let thirdItem = document.createElement("li");
+      thirdItem.innerText = "Três";
+      let fourthItem = document.createElement("li");
+      fourthItem.innerText = "Quatro";
+      let fifthItem = document.createElement("li");
+      fifthItem.innerText = "Cinco";
+      let sixthItem = document.createElement("li");
+      sixthItem.innerText = "Seis";
+      let seventhItem = document.createElement("li");
+      seventhItem.innerText = "Sete";
+      let eighthItem = document.createElement("li");
+      eighthItem.innerText = "Oito";
+      let ninthItem = document.createElement("li");
+      ninthItem.innerText = "Nove";
+      let tenthItem = document.createElement("li");
+      tenthItem.innerText = "Dez";
+      let firstSubtitle = document.createElement("h3");
+      let secondSubtitle = document.createElement("h3");
+      let thirdSubtitle = document.createElement("h3");
+
+
+
+      document.body.appendChild(title);
+      document.body.appendChild(firstDiv);
+      firstDiv.appendChild(secondDiv);
+      secondDiv.appendChild(firstParagraph);
+      firstDiv.appendChild(thirdDiv);
+      firstDiv.appendChild(fourthDiv);
+      thirdDiv.appendChild(smallImg);
+      unorderedList.appendChild(firstItem);
+      unorderedList.appendChild(secondItem);
+      unorderedList.appendChild(thirdItem);
+      unorderedList.appendChild(fourthItem);
+      unorderedList.appendChild(fifthItem);
+      unorderedList.appendChild(sixthItem);
+      unorderedList.appendChild(seventhItem);
+      unorderedList.appendChild(eighthItem);
+      unorderedList.appendChild(ninthItem);
+      unorderedList.appendChild(tenthItem);
+      fourthDiv.appendChild(unorderedList);
+      firstDiv.appendChild(firstSubtitle);
+      firstDiv.appendChild(secondSubtitle);
+      firstDiv.appendChild(thirdSubtitle);
     </script>
   </body>
 </html>
