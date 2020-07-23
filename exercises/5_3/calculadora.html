@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+
+    const solution = document.querySelector("#solution");
+    const square = document.querySelector("#square-input");
+    const half = document.querySelector("#half-input");
+    const percent1 = document.querySelector("#percent1-input");
+    const percent2 = document.querySelector("#percent2-input");
+    const radius = document.querySelector("#area-input");
+    const squareButton = document.querySelector("#square-button");
+    const halfButton = document.querySelector("#half-button");
+    const percentButton = document.querySelector("#percent-button");
+    const areaButton = document.querySelector("#area-button");
+
+    function squareNumber(event) {
+      let squaredNumber = parseInt(square.value) ** 2;
+      solution.innerText = squaredNumber;
+    }
+
+    function halfNumber(event) {
+      let halfedNumber = parseInt(half.value) / 2;
+      solution.innerText = halfedNumber;
+    }
+
+    function percentOf(event) {
+      let percentNumber = (parseInt(percent1.value) / parseInt(percent2.value)) * 100;
+      solution.innerText = percentNumber;
+    }
+
+    function circleArea(event) {
+      let areaNumber = Math.PI * (parseInt(radius.value) ** 2);
+      solution.innerText = areaNumber;
+    }
+
+    squareButton.addEventListener("click", squareNumber);
+    halfButton.addEventListener("click", halfNumber);
+    percentButton.addEventListener("click", percentOf);
+    areaButton.addEventListener("click", circleArea);
+
+  </script>
+  
+</body>
+</html>
