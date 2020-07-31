@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    Hello
+    <h1 id="title">Job Application</h1>
   </header>
   <form action="" method="" >
 
@@ -56,6 +56,26 @@
           <label for="house">Casa</label>
           <input type="radio" name="habitation" value="apartamento" id="apartment">
           <label for="apartment">Apartamento</label>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Ultima experiência laboral</legend>
+
+        <div class="line-info">
+          <label for="resume">Resumo do currículo:</label><br>
+          <textarea name="resume" id="resume" maxlength="1000"  cols="74" rows="10" required ></textarea>
+        </div>
+
+        <div class="line-info">
+          <label for="position">Cargo:</label>
+          <input type="text" name="position" id="position" maxlength="40" required>
+        </div>
+
+        <div class="line-info">
+          <label for="job-description">Descrição do cargo:</label>
+          <input type="text" name="job-description" id="job-description" maxlength="500" required>
         </div>
 
       </fieldset>
