@@ -34,20 +34,28 @@
         </div>
 
         <div class="line-info">
-          <label for="endereco">Endereço:</label>
-          <input type="text" name="endereco" id="endereco" maxlength="200" required>
+          <label for="adress">Endereço:</label>
+          <input type="text" name="adress" id="adress" maxlength="200" required>
         </div>
 
         <div class="line-info">
-          <label for="cidade">Cidade:</label>
-          <input type="text" name="cidade" id="cidade" maxlength="28" required>
+          <label for="city">Cidade:</label>
+          <input type="text" name="city" id="city" maxlength="28" required>
         </div>
 
-        <div>
-          <label for="estado">Estado:</label>
-          <select name="estado" id="estado" required>
+        <div class="line-info">
+          <label for="state">Estado:</label>
+          <select name="state" id="state" required>
             <option selected value="">Selecione seu estado</option>
           </select>
+        </div>
+
+        <div class="line-info">
+          <p>Tipo de moradia: </p>
+          <input type="radio" name="habitation" value="casa" id="house">
+          <label for="house">Casa</label>
+          <input type="radio" name="habitation" value="apartamento" id="apartment">
+          <label for="apartment">Apartamento</label>
         </div>
 
       </fieldset>
