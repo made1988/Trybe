@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1 id="title" class="title is-1">Job Application</h1>
+  </header>
+  <form action="" method="" >
+
+    <label class="title is-2">Dados Pessoais</label>
+
+    <div class="field">
+      <label for="full-name" class="label">Nome completo:</label>
+      <div class="control">
+        <input class="input" type="text" class="input" name="full-name" id="full-name" maxlength="40" required>
+      </div>
+      </div>
+
+    <div class="field">
+      <label for="email" class="label">E-mail:</label>
+      <div class="control has-icons-left">
+        <input class="input" type="text" name="email" id="email" maxlength="50" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="cpf" class="label">CPF:</label>
+      <div class="control">
+        <input class="input" type="text" name="cpf" id="cpf" maxlength="11" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="adress" class="label">Endereço:</label>
+      <div>
+        <input class="input" type="text" name="adress" id="adress" maxlength="200" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="city" class="label">Cidade:</label>
+      <div>
+        <input class="input" type="text" name="city" id="city" maxlength="28" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="state" class="label">Estado:</label>
+      <div>
+        <select class="select" name="state" id="state" required>
+          <option selected value="">Selecione seu estado</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <p class=label>Tipo de moradia: </p>
+      <div class="control">
+        <label class="radio"><input type="radio" name="habitation" value="casa" id="house"> Casa</label>
+      </div>
+      <div class="control">
+        <label class="radio"><input type="radio" name="habitation" value="apartamento" id="apartment"> Apartamento</label>
+      </div>
+    </div>
+
+    <label class="title is-2">Ultima experiência laboral</label>
+
+    <div class="field">
+      <label for="resume" class="label">Resumo do currículo:</label><br>
+      <div class="control">
+        <textarea class="textarea" name="resume" id="resume" maxlength="1000" required ></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="position" class="label">Cargo:</label>
+      <div class="control">
+        <input type="text" class="input" name="position" id="position" maxlength="40" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="job-description" class="label">Descrição do cargo:</label>
+      <div class="control">
+        <input type="text" class="input" name="job-description" id="job-description" maxlength="500" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="" class="label">Data de início:</label>
+      <div class="control">
+        <input type="text" class="input" name="date" id="date" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <button type="submit" class="button is-success">Enviar</button>
+      </div>
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>
