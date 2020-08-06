@@ -41,6 +41,10 @@ figure {
   body {
     background-color: rgb(116, 243, 154);
     font-size: 1em;
-    margin: 15px 35px;
+    margin: 55px 10%;
+  }
+
+  h1 { 
+    font-size: 2em;
   }
 }
