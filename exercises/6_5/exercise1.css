@@ -1,5 +1,5 @@
 body {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin: 5px 15px;
 }
 
@@ -21,6 +21,8 @@ figure {
 
 @media screen and (min-width: 830px) {
   body {
-    background-color: rgb(132, 167, 221)
+    background-color: rgb(92, 133, 196);
+    font-size: 1.1em;
+    margin: 15px 35px;
   }
 }
