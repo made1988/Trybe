@@ -18,3 +18,9 @@ img {
 figure {
     margin: 35px 0;
 }
+
+@media screen and (min-width: 830px) {
+  body {
+    background-color: rgb(132, 167, 221)
+  }
+}
