@@ -19,7 +19,7 @@ figure {
     margin: 35px 0;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 830px) and (max-width: 1330px) {
   body {
     background-color: rgb(92, 133, 196);
     font-size: 1.1em;
@@ -34,5 +34,13 @@ figure {
 
   figure {
     width: 45%;
+  }
+}
+
+@media screen and (min-width: 1330px) {
+  body {
+    background-color: rgb(116, 243, 154);
+    font-size: 1.1em;
+    margin: 15px 35px;
   }
 }
