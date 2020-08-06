@@ -42,9 +42,20 @@ figure {
     background-color: rgb(116, 243, 154);
     font-size: 1em;
     margin: 55px 10%;
+    max-width: 1300px;
+  }
+
+  figure {
+    width: 45%;
   }
 
   h1 { 
     font-size: 2em;
+  }
+
+  .image-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
