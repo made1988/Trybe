@@ -40,7 +40,7 @@ figure {
 @media screen and (min-width: 1330px) {
   body {
     background-color: rgb(116, 243, 154);
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 15px 35px;
   }
 }
