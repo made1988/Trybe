@@ -25,4 +25,14 @@ figure {
     font-size: 1.1em;
     margin: 15px 35px;
   }
+
+  .image-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  figure {
+    width: 45%;
+  }
 }
