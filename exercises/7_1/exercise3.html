@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+
+  <h1>Click the button and be amazed!</h1>
+  <button id="clicky-button">Click here!</button>
+  <p id="clicky-count"></p>
+
+  <script>
+    let clickCount = 0;
+    const btn = document.querySelector('#clicky-button');
+    const countP = document.querySelector('#clicky-count');
+    btn.addEventListener('click', () => {
+      clickCount += 1;
+      countP.innerText = `You have clicked ${clickCount} times!!`
+    });
+  </script>
+</body>
+</html>
