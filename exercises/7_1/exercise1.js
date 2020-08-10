@@ -5,5 +5,3 @@ const factorial = num => {
   }
   return result;
 }
-
-console.log(factorial(6));
