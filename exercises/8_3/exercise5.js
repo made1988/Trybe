@@ -20,4 +20,4 @@ function containsA() {
 }
 
 containsA();
-// assert.deepEqual(containsA(), 20);
+assert.deepEqual(containsA(), 20);
