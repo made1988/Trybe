@@ -64,14 +64,9 @@ const books = [
 ];
 
 function smallerName() {
-  let nameBook;
   const bookNameList = [];
   books.forEach(book => bookNameList.push(book.name));
-  bookNameList.sort();
-  console.log(bookNameList);
-  return nameBook;
+  return bookNameList.sort((a, b) => a.length - b.length)[0];
 }
-
-console.log(books.find(book => book.name.length > 0).name.length);
 
 assert.equal(smallerName(), 'Duna');
