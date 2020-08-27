@@ -8,13 +8,20 @@ const makeArray = size => {
   return array;
 }
 
+const sumPromise = new Promise((resolve, reject) => {
+
+})
+
 const promise = new Promise ((resolve, reject) => {
   const workingArray = makeArray(10);
-  const conditionArray = workingArray.map(value => value ** 2).reduce((acc, current) => acc + current);
-  if (conditionArray < 8000) {
-    return resolve('Resolvida');
+  const conditionNumber = workingArray.map(value => value ** 2).reduce((acc, current) => acc + current);
+  if (conditionNumber < 8000) {
+    const divisionArray = [2, 3, 5, 10];
+    const resultArray = divisionArray.map(divisor => conditionNumber / divisor);
+    resolve(resultArray);
+  } else {
+    reject(new Error('É mais de oito mil! Essa promise deve estar quebrada!'));
   }
-  reject(new Error('Rejeitada'));
 })
 .then(result => console.log(result))
 .catch(err => console.log(err));
