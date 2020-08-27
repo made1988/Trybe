@@ -12,7 +12,9 @@ const promise = new Promise ((resolve, reject) => {
   const workingArray = makeArray(10);
   const conditionArray = workingArray.map(value => value ** 2).reduce((acc, current) => acc + current);
   if (conditionArray < 8000) {
-    return resolve(console.log('Resolvida'));
+    return resolve('Resolvida');
   }
   reject(new Error('Rejeitada'));
 })
+.then(result => console.log(result))
+.catch(err => console.log(err));
