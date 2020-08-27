@@ -6,11 +6,18 @@ const makeArray = size => {
     array.push(randomNumber());
   }
   return array;
-}
+};
 
-const sumPromise = new Promise((resolve, reject) => {
-
-})
+const sumPromise = (arrayToSum) => {
+  return new Promise((resolve, reject) => {
+    if (Math.random() > 0.1) {
+      const summedNumber = arrayToSum.reduce((accum, curr) => accum + curr);
+      resolve(summedNumber);
+    } else {
+      reject(new Error('Bad luck with that random, huh?'));
+    }
+  })
+};
 
 const promise = new Promise ((resolve, reject) => {
   const workingArray = makeArray(10);
@@ -23,5 +30,5 @@ const promise = new Promise ((resolve, reject) => {
     reject(new Error('É mais de oito mil! Essa promise deve estar quebrada!'));
   }
 })
-.then(result => console.log(result))
+.then(result => console.log(sumPromise(result)))
 .catch(err => console.log(err));
