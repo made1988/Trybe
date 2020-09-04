@@ -1,6 +1,4 @@
 const ex1 = require('./exercise1');
-const exercise1 = require('./exercise1');
-const { randomNumber } = require('./exercise1');
 jest.mock('./exercise1');
 
 
