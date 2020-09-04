@@ -1,0 +1,24 @@
+{
+  "name": "Trybe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianoelsztain/Trybe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianoelsztain/Trybe/issues"
+  },
+  "homepage": "https://github.com/marianoelsztain/Trybe#readme"
+}
