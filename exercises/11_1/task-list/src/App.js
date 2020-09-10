@@ -7,8 +7,14 @@ const task = (value) => {
   );
 }
 
+const thingsToDo = ['Finish the exercises', 'Feed the car', 'Cook dinner', 'Read Sapiens'];
+
 function App() {
-  return task('Finish the exercises');
+  return (
+    <ul>
+      {thingsToDo.map(thing => task(thing))}
+    </ul>
+  ) 
 }
 
 export default App;
