@@ -1,0 +1,61 @@
+body {
+  font-size: 1.3em;
+  margin: 5px 15px;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 35px 0;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1330px) {
+  body {
+    background-color: rgb(92, 133, 196);
+    font-size: 1.1em;
+    margin: 15px 35px;
+  }
+
+  .image-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  figure {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1330px) {
+  body {
+    background-color: rgb(116, 243, 154);
+    font-size: 1em;
+    margin: 55px 10%;
+    max-width: 1300px;
+  }
+
+  figure {
+    width: 45%;
+  }
+
+  h1 { 
+    font-size: 2em;
+  }
+
+  .image-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
